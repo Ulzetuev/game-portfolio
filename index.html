@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Портфолио гейм-дев разработчика</title>
+  <title>Anton Ulzetuev — Game Developer Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     :root {
@@ -132,7 +132,7 @@
     }
 
     section {
-      scroll-margin-top: 80px; /* чтобы якорь не уходил под header */
+      scroll-margin-top: 80px; /* so the anchor is not hidden behind header */
     }
 
     #home {
@@ -440,145 +440,144 @@
   <header>
     <nav class="nav">
       <div class="nav__logo">
-        <div class="nav__logo-badge">GD</div>
+        <div class="nav__logo-badge">AU</div>
         <span>Game Dev Portfolio</span>
       </div>
       <div class="nav__links">
-        <a href="#home" class="nav__link">Начало</a>
-        <a href="#resume" class="nav__link">Резюме</a>
-        <a href="#contacts" class="nav__link nav__link--primary">Контакты</a>
+        <a href="#home" class="nav__link">Home</a>
+        <a href="#resume" class="nav__link">Resume</a>
+        <a href="#contacts" class="nav__link nav__link--primary">Contact</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- Блок "начало страницы" -->
+    <!-- Hero / top of page -->
     <section id="home">
       <div>
-        <h1 class="hero__title">[Ваше имя], Game / Frontend Developer</h1>
+        <h1 class="hero__title">Anton Ulzetuev, Junior Game Developer</h1>
         <p class="hero__subtitle">
-          Разрабатываю игры и игровые интерфейсы. Комбинирую геймдизайн,
-          UI/UX и фронтенд, чтобы сделать игровой опыт максимально живым.
+          Junior game developer with 3 years of experience. I focus on gameplay
+          programming and small PC projects, experimenting with C#, MonoGame and Unreal Engine.
         </p>
 
         <div class="hero__tags">
-          <span class="hero__tag">Unity / Unreal / WebGL</span>
-          <span class="hero__tag">Gameplay &amp; UI</span>
-          <span class="hero__tag">Game jams</span>
+          <span class="hero__tag">C# / MonoGame / Unreal Engine</span>
+          <span class="hero__tag">Gameplay programming</span>
+          <span class="hero__tag">PC games & prototypes</span>
         </div>
 
         <div class="hero__cta">
           <button class="hero__cta-primary" onclick="document.querySelector('#resume').scrollIntoView({behavior:'smooth'})">
-            Смотреть резюме →
+            View resume →
           </button>
           <div class="hero__cta-secondary">
-            <div>Сводный видео-обзор игр ниже справа</div>
-            <span>+ ссылки на GitHub / itch.io в контактах</span>
+            <div>Video overview of my games on the right.</div>
+            <span>+ GitHub and LinkedIn in the contacts section.</span>
           </div>
         </div>
       </div>
 
-      <!-- Видео с обзором игр -->
+      <!-- Games showreel video -->
       <div class="video-card">
         <div class="video-card__label">
-          <span>Видео-портфолио</span>
-          <span>3–5 минут геймплея достаточно</span>
+          <span>Video portfolio</span>
+          <span>3–5 minutes of gameplay is enough</span>
         </div>
       
         <div class="video-wrapper">
           <iframe
             src="https://www.youtube.com/embed/mU78_ZeG600"
-            title="Обзор моих игр"
+            title="My games overview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
       
         <div class="video-card__caption">
-          <span>Короткий монтаж лучших моментов: прототипы, UI, геймплей.</span>
+          <span>Short compilation of gameplay, prototypes and UI.</span>
           <a href="https://youtu.be/mU78_ZeG600" target="_blank" rel="noreferrer">
-            Открыть на YouTube ↗
+            Open on YouTube ↗
           </a>
         </div>
-      
 
-          <!--
-          Вариант 2: локальное видео-файл
-          <video controls poster="preview.jpg">
-            <source src="games-reel.mp4" type="video/mp4" />
-            Ваш браузер не поддерживает видео-тег.
-          </video>
-          -->
-        </div>
-
-        <div class="video-card__caption">
-          <span>Короткий монтаж лучших моментов: прототипы, UI, геймплей.</span>
-          <a href="https://youtu.be/VIDEO_ID" target="_blank" rel="noreferrer">
-            Открыть на YouTube ↗
-          </a>
-        </div>
+        <!--
+        Option 2: local video file
+        <video controls poster="preview.jpg">
+          <source src="games-reel.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        -->
       </div>
     </section>
 
-    <!-- Резюме -->
+    <!-- Resume -->
     <section id="resume">
-      <h2 class="section-title">Резюме</h2>
+      <h2 class="section-title">Resume</h2>
       <div class="card resume-grid">
         <div class="resume__meta">
-          <h3>[Ваше имя и фамилия]</h3>
-          <p>Game / Frontend Developer · [город, страна]</p>
+          <h3>Anton Ulzetuev</h3>
+          <p>Junior Game Developer · Edinburgh, United Kingdom</p>
           <ul class="resume__list">
             <li class="resume__item">
-              <span class="resume__item-label">Опыт</span>
-              <span class="resume__item-value">N+ лет в фронтенде / геймдеве</span>
+              <span class="resume__item-label">Experience</span>
+              <span class="resume__item-value">3 years in game development</span>
             </li>
             <li class="resume__item">
-              <span class="resume__item-label">Формат</span>
+              <span class="resume__item-label">Work mode</span>
               <span class="resume__item-value">Remote / Hybrid</span>
             </li>
             <li class="resume__item">
-              <span class="resume__item-label">Языки</span>
-              <span class="resume__item-value">Русский, English, [дополните]</span>
+              <span class="resume__item-label">Languages</span>
+              <span class="resume__item-value">Russian, English, Chinese, Ukrainian</span>
             </li>
           </ul>
 
           <div class="resume__stack">
-            <span>TypeScript</span>
-            <span>React</span>
-            <span>WebGL / Canvas</span>
-            <span>Unity / C#</span>
-            <span>Game UI / UX</span>
+            <span>C#</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>Unreal Engine</span>
+            <span>PHP</span>
+            <span>HTML</span>
+            <span>SQL</span>
           </div>
         </div>
 
         <div class="resume__content">
           <p>
-            Короткий текст о вас: какие жанры игр вы делаете, какие движки используете,
-            любите ли прототипирование, мультиплеер, мобильные игры и т.д.
+            I work on small to mid-size game projects, mainly for PC. My main focus is
+            gameplay programming, core mechanics and basic UI. I enjoy prototyping ideas,
+            iterating quickly and polishing feel and responsiveness.
           </p>
           <p>
-            Можно выделить 2–3 ключевых проекта и кратко описать вклад: геймплей, системы,
-            UI, оптимизация, аналитика, тулзы для дизайнеров и т.п.
+            Below is one of my recent projects. More examples and details are available
+            in my repositories and on LinkedIn.
           </p>
           <ul class="resume__list">
             <li class="resume__item">
-              <span class="resume__item-label">Проект 1</span>
+              <span class="resume__item-label">Trespasser</span>
               <span class="resume__item-value">
-                Название игры · ваша роль · стек (пример: Unity, C#, DOTS). 1–2 предложения
-                о том, что именно сделали.
+                PC game · C# (MonoGame). I worked on core game mechanics, testing and
+                overall project management: planning tasks, integrating feedback and
+                keeping the project on track.
               </span>
             </li>
             <li class="resume__item">
-              <span class="resume__item-label">Проект 2</span>
+              <span class="resume__item-label">More</span>
               <span class="resume__item-value">
-                Кратко: платформа (PC / mobile / web), тип проекта, ваш вклад.
+                Additional projects and details are listed on my
+                <a href="https://www.linkedin.com/in/anton-ulzetuev/" target="_blank" rel="noreferrer">
+                  LinkedIn profile
+                </a>
+                and GitHub.
               </span>
             </li>
             <li class="resume__item">
-              <span class="resume__item-label">PDF</span>
+              <span class="resume__item-label">Full CV</span>
               <span class="resume__item-value">
-                <a href="cv.pdf" target="_blank" rel="noreferrer">
-                  Скачать полноe резюме (PDF)
+                <a href="https://www.linkedin.com/in/anton-ulzetuev/" target="_blank" rel="noreferrer">
+                  View full resume on LinkedIn
                 </a>
               </span>
             </li>
@@ -587,41 +586,41 @@
       </div>
     </section>
 
-    <!-- Контакты -->
+    <!-- Contacts -->
     <section id="contacts">
-      <h2 class="section-title">Контакты</h2>
+      <h2 class="section-title">Contact</h2>
       <div class="card contacts-grid">
         <div>
           <div class="contacts__row">
             <span class="contacts__label">Email</span>
             <span class="contacts__value">
-              <a href="mailto:you@example.com">you@example.com</a>
+              <a href="mailto:Ulzetuev.av@hotmail.com">Ulzetuev.av@hotmail.com</a>
             </span>
           </div>
           <div class="contacts__row">
             <span class="contacts__label">Telegram</span>
             <span class="contacts__value">
-              <a href="https://t.me/your_handle" target="_blank" rel="noreferrer">
-                @your_handle
+              <a href="https://t.me/Ulzetuev" target="_blank" rel="noreferrer">
+                @Ulzetuev
               </a>
             </span>
           </div>
           <div class="contacts__row">
-            <span class="contacts__label">Месседжи</span>
+            <span class="contacts__label">Messages</span>
             <span class="contacts__note">
-              Предпочитаю короткие сообщения по делу. Можно сразу приложить ссылку
-              на проект / вакансию и стек.
+              I prefer short, focused messages. Feel free to include project or job links
+              and the tech stack right away.
             </span>
           </div>
         </div>
 
         <div>
           <div class="contacts__row">
-            <span class="contacts__label">Портфолио</span>
+            <span class="contacts__label">Portfolio links</span>
             <div class="contacts__links">
               <a
                 class="contacts__link-chip"
-                href="https://github.com/your_profile"
+                href="https://github.com/Ulzetuev"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -629,33 +628,17 @@
               </a>
               <a
                 class="contacts__link-chip"
-                href="https://your-itch.io"
+                href="https://www.linkedin.com/in/anton-ulzetuev/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span>itch.io</span>
-              </a>
-              <a
-                class="contacts__link-chip"
-                href="https://store.steampowered.com/developer/your_studio"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>Steam</span>
-              </a>
-              <a
-                class="contacts__link-chip"
-                href="https://www.artstation.com/your_profile"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span>ArtStation / Behance</span>
+                <span>LinkedIn</span>
               </a>
             </div>
           </div>
           <div class="contacts__row">
             <span class="contacts__label">Time zone</span>
-            <span class="contacts__value">[Ваш часовой пояс] · Ответ обычно в течение дня</span>
+            <span class="contacts__value">Edinburgh (UTC+0) · typically respond within a day</span>
           </div>
         </div>
       </div>
@@ -664,13 +647,13 @@
 
   <footer>
     <div class="footer-inner">
-      <span>© <span id="year"></span> [Ваше имя]. Game Dev Portfolio.</span>
-      <span>Сделано без фреймворков — чистый HTML/CSS.</span>
+      <span>© <span id="year"></span> Anton Ulzetuev. Game Dev Portfolio.</span>
+      <span>Built with plain HTML &amp; CSS.</span>
     </div>
   </footer>
 
   <script>
-    // Год в футере
+    // Year in footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
